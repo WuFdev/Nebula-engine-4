@@ -337,7 +337,7 @@ struct StudioAppImpl final : StudioApp
 
 		Engine::InitArgs init_data = {};
 		init_data.handle_file_drops = true;
-		init_data.window_title = "Lumix Studio";
+		init_data.window_title = "Nebula Studio";
 		init_data.working_dir = data_dir[0] ? data_dir : (saved_data_dir[0] ? saved_data_dir : current_dir);
 		m_engine = Engine::create(static_cast<Engine::InitArgs&&>(init_data), m_allocator);
 		m_main_window = m_engine->getWindowHandle();
